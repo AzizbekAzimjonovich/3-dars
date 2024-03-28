@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(202, 236, 255);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+}
+
+.card {
+  z-index: 1;
+  width: 500px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  -webkit-box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  -moz-box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+
+}
+
+.editEl {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 300px;
+  padding: 40px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  -webkit-box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  -moz-box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+}
+
+.inputImage {
+  padding: 20px;
+  border: 2px solid black;
+  outline: none;
+
+}
+
+.inputName {
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+
+  border: 1pX solid rgb(0, 212, 255);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.uni {
+  padding: 30px 60px;
+}
+
+header {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(98, 183, 255, 1) 100%, rgba(146, 146, 255, 1) 100%);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  font-size: 25px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.8s;
+}
+
+.hour {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  opacity: 0.4;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.fa-trash {
+  display: none;
+  border-radius: 50%;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  -webkit-box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  -moz-box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 100%;
+  margin-top: -110px;
+  transform: translateX(-50%);
+  transition: all 0.5s;
+
+}
+
+.plus {
+  color: rgb(0, 187, 255);
+  font-size: 40px;
+  font-family: 700;
+  text-align: center;
+  border-top: 1px solid rgba(6, 6, 6, 0.1);
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+  border-left: 10px solid rgb(0, 187, 255);
+  border-radius: 4px;
+  box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  -webkit-box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+  -moz-box-shadow: 4px -5px 65px -12px rgba(0, 153, 255, 0.75);
+
+  .fa-trash {
+    display: inline;
+  }
+
+}
+
+.imgs {
+  display: flex;
+  gap: 55px;
+
+  .edit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+}
+
+.fa-trash:hover {
+  box-shadow: 4px -5px 65px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px -5px 65px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px -5px 65px -12px rgba(0, 0, 0, 0.75);
+
+  .delete {
+    display: inline;
+
+  }
+
+}
+
+.delete {
+  display: none;
+  padding: 5px 10px;
+  background: rgb(0, 212, 255);
+  color: #fff;
+  margin-top: -23px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 10px;
+  margin-left: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-120%);
+
+}
+
+.input-file {
+  position: relative;
+  display: inline-block;
+}
+
+.input-file-btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: sans-serif;
+  vertical-align: middle;
+  color: rgb(255 255 255);
+  text-align: center;
+  border-radius: 4px;
+  background-color: #419152;
+  line-height: 22px;
+  height: 40px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  transition: background-color 0.2s;
+}
+
+.input-file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+
+
+/* Hover/active */
+.input-file:hover .input-file-btn {
+  background-color: #59be6e;
+}
